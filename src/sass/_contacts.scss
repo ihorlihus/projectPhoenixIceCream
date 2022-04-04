@@ -1,0 +1,200 @@
+.contacts__wrapper{
+    padding-bottom: 32px;
+    @media screen and(max-width: 767px) {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and(min-width: 768px) {
+        padding-bottom: 40px;
+    }
+    @media screen and(min-width: 1200px) {
+        padding-bottom: 60px;
+    }
+}
+.contacts-cards{
+    @media screen and(min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: -16px;
+    }
+}
+.contacts-cards__item{
+    padding: 40px 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+    @media screen and(min-width: 768px) {
+        flex-basis: calc(100% / 3 - 32px);
+        margin: 16px;
+    }
+    @media screen and(min-width: 1200px){
+        padding: 40px;
+    }
+}
+
+.contacts__agency{
+    
+    max-width: 80px;
+    margin-bottom: 20px;
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    display: block;
+    
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+    background-color: #F0D1A5;
+    border-radius: 4px;
+    &.contacts__agency--bgc{
+        background-color:#C2E297; 
+        max-width: 130px;
+    }
+    @media screen and(min-width: 768px) {
+        margin-bottom: 32px;
+    }
+    @media screen and(min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
+.contacts__city{
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+
+    color: var(--main-text-color);
+    @media screen and(min-width: 768px) {
+        margin-bottom: 12px;
+    }
+    @media screen and(min-width: 1200px) {
+        font-size: 16px;
+    }
+
+}
+.contacts__descr{
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--second-text-color);
+    @media screen and(min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+.contacts__item{
+    &:not(:first-child){
+        padding-top: 24px;
+    }
+    padding-bottom: 24px;
+    &:not(:last-child){border-bottom: 1px solid #E1E1E1;
+    }
+    @media screen and(min-width: 768px) {
+        &:not(:first-child){
+            padding-top: 32px;
+        }
+        padding-bottom: 32px;
+    }
+        
+}
+.contacts__thumb{
+    margin-bottom: 8px;
+    @media screen and(min-width: 768px) {
+        margin-bottom: 12px;
+    }
+}
+.contacts__work-days{
+    font-weight: 500;
+font-size: 12px;
+line-height: 186%;
+color: var(--main-text-color);
+    @media screen and(min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+.contacts__time{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #FFA5BA;
+    @media screen and(min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+
+.contacts__tel, .contacts__mail{
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--second-text-color);
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    @media screen and(min-width: 768px) {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    @media screen and(min-width: 1200px) {
+        font-size: 16px;
+    }
+}
+// contacts__btn
+.contacts-buttons{
+    @media screen and(min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+    & .contacts-buttons__item + .contacts-buttons__item{
+        @media screen and(min-width: 768px) {
+            margin-left: 15px;
+        }
+    }
+}
+.contacts-buttons__item{
+    @media screen  and(max-width: 767px) {
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.contacts__btn{
+    
+    display: block;
+    align-items: center;
+    text-align: center;
+
+    min-width: 162px;
+    padding: 17px 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    border-radius: 22px;
+
+    border: transparent;
+    cursor: pointer;
+    &.contacts__btn--first{
+        background: #D41342;
+        color: #FFFFFF;
+    }
+    &.contacts__btn--sec{
+        background: #fff;
+        color: #D41342;
+    }
+
+    @media screen and(max-width: 767px) {
+        margin: auto;
+    }
+}
+
+.contacts__icon{
+    margin-left: 12px;
+    fill: currentColor;
+}
