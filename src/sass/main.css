@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.header-one {
+  font-size: large;
+  color: aqua;
+}
+
+.section {
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 121px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 123px;
+  }
+}
+
+.gallery__section {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff5f6), color-stop(50%, #fff));
+  background-image: linear-gradient(to bottom, #fff5f6 50%, #fff 50%);
+}
+
+.container__my {
+  position: relative;
+  width: 320px;
+  height: 122px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container__my {
+    width: 768px;
+    height: 264px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__my {
+    width: 1200px;
+    height: 430px;
+  }
+}
+
+.gallery--main-icon {
+  width: 81px;
+  height: 81px;
+  z-index: 1;
+}
+
+.gallery--main-icon:hover, .gallery--main-icon:focus {
+  top: 50%;
+  left: 50%;
+  background-color: red;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5) translate(-50%, -50%);
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery--main-icon {
+    width: 175px;
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery--main-icon {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.gallery--litle-icon {
+  z-index: 1;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.gallery--litle-icon:hover, .gallery--litle-icon:focus {
+  background-color: red;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery--litle-icon {
+    width: 86px;
+    height: 86px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery--litle-icon {
+    width: 139px;
+    height: 139px;
+  }
+}
+
+.gallery__icon-1 {
+  position: absolute;
+  left: 6.25%;
+  top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-1 {
+    left: 74px;
+    top: 86px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-1 {
+    left: 134px;
+    top: 142px;
+  }
+}
+
+.gallery__icon-2 {
+  position: absolute;
+  left: 19%;
+  top: 66px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-2 {
+    left: 163px;
+    top: 143px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-2 {
+    left: 279px;
+    top: 233px;
+  }
+}
+
+.gallery__icon-3 {
+  position: absolute;
+  left: 19%;
+  top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-3 {
+    left: 163px;
+    top: 53px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-3 {
+    left: 279px;
+    top: 87px;
+  }
+}
+
+.gallery__icon-4 {
+  position: absolute;
+  left: 32.18%;
+  top: 83px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-4 {
+    left: 252px;
+    top: 179px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-4 {
+    left: 426px;
+    top: 292px;
+  }
+}
+
+.gallery__icon-5 {
+  position: absolute;
+  left: 32.18%;
+  top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-5 {
+    left: 252px;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-5 {
+    left: 426px;
+    top: 0;
+  }
+}
+
+.gallery__icon-6 {
+  position: absolute;
+  left: 57.81%;
+  top: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-6 {
+    left: 430px;
+    top: 151px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-6 {
+    left: 715px;
+    top: 245px;
+  }
+}
+
+.gallery__icon-7 {
+  position: absolute;
+  left: 57.81%;
+  top: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-7 {
+    left: 430px;
+    top: 61px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-7 {
+    left: 715px;
+    top: 100px;
+  }
+}
+
+.gallery__icon-8 {
+  position: absolute;
+  left: 70.93%;
+  top: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-8 {
+    left: 519px;
+    top: 122px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-8 {
+    left: 861px;
+    top: 198px;
+  }
+}
+
+.gallery__icon-9 {
+  position: absolute;
+  left: 70.93%;
+  top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-9 {
+    left: 519px;
+    top: 33px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-9 {
+    left: 861px;
+    top: 53px;
+  }
+}
+
+.gallery__icon-10 {
+  position: absolute;
+  left: 83.75%;
+  top: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__icon-10 {
+    left: 609px;
+    top: 94px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__icon-10 {
+    left: 1006px;
+    top: 154px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h6 li {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  --title-color: #D41443;
+  --main-text-color: #000000;
+  --second-text-color: #907E82;
+  --text-white-color: #ffffff;
+  --main-bg-color: #FFB8CA;
+  --secondary-bg-color: #FFF5F6;
+  --hover-color: #D41443;
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+main-font {
+  font-family: Titan One;
+}
+
+second-font {
+  font-family: DM Sans, sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */
