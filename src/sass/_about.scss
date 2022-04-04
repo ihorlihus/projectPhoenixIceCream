@@ -1,6 +1,6 @@
 .about {
 	padding: 125px 0px 39px 0px;
-	background-color: #FFF5F6;
+	background-color: var(--secondary-bg-color);
 
 	@media screen and (min-width: 768px) {
 			padding: 130px 0px 66px 0px;
@@ -82,7 +82,6 @@
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 15px;
-
 	color: #FFA5BA;
 
 		@media screen and (min-width: 768px) {
@@ -108,7 +107,7 @@
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 
-	color: #D41443;
+	color: var(--title-color);
 
 		@media screen and (min-width: 768px) {
 			font-size: 48px;
@@ -203,7 +202,7 @@
 	font-size: 12px;
 	line-height: 1.62;
 
-	color: #907E82;
+	color: var(--second-text-color);
 
 		@media screen and (min-width: 768px) {
 			font-size: 14px;
@@ -220,7 +219,7 @@
 
 
 .inner-text-about__subtitle_black {
-	color: #000000;
+	color: var(--main-text-color);
 	margin-bottom: 35px;
 
 		@media screen and (min-width: 768px) {
@@ -253,11 +252,12 @@
 	align-items: center;
 	text-align: center;
 
-	color: #D41443;
+	color: var(--title-color);
 
 	padding: 11px 36px;
-	background-color: #ffffff;
+	background-color: var(--text-white-color);
 	border-radius: 22px;
+	transition: background-color var(--animation-timing-function);
 }
 
 .inner-text-about__button:hover,
