@@ -123,7 +123,8 @@ color: var(--main-text-color);
     }
 }
 
-.contacts__tel, .contacts__mail{font-weight: 500;
+.contacts__tel, .contacts__mail{
+    font-weight: 500;
     font-size: 12px;
     color: var(--second-text-color);
     text-decoration: none;
