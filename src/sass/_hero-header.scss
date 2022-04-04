@@ -1,8 +1,5 @@
-.header-one {
-font-size: large;
-color: aqua;
-}
 .header {
+    position: relative;
     background-color: var(--main-bg-color);
     background-image: url('../images/ice-cream-hero.png'), url('../images/Ellipse-pink-hero.png');
     background-repeat: no-repeat;
@@ -13,18 +10,30 @@ color: aqua;
         background-image:
             url('../images/so-tasty-hero.png'),
             url('../images/ice-cream-hero.png'),
-            url('../images/Ellipse-pink-hero.png'),
-            url('../images/milk.png');
+            url('../images/Ellipse-pink-hero.png');
         background-position:
             right 34px bottom,
-            right 247px top 63px,
-            right 137px top 31px,
-            left 34px bottom 28px;
+            right 247px bottom,
+            right 137px top 31px;
         background-size:
             168px,
-            171px,
-            364px,
-            124px;
+            143px,
+            322px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        // background-image:
+        //     url('../images/so-tasty-hero.png'),
+        //     url('../images/ice-cream-hero.png'),
+        //     url('../images/Ellipse-pink-hero.png');
+        background-position:
+            right 110px bottom,
+            right 450px top 110px,
+            right 270px top 50px;
+        background-size:
+            293px,
+            236px,
+            538px;
     }
 }
 
@@ -36,6 +45,10 @@ color: aqua;
 
     @media screen and (min-width: 768px) {
         padding-top: 37px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 85px;
     }
 
 }
@@ -124,6 +137,7 @@ color: aqua;
 
     @media screen and (min-width:768px) {
         padding-top: 15px;
+        padding-bottom: 80px;
     }
 }
 
@@ -158,4 +172,114 @@ color: aqua;
     position: absolute;
     right: 0;
     top: 50px;
+}
+
+.thumb-milk {
+    display: none;
+    width: 114px;
+    height: 48px;
+
+    @media screen and (min-width:768px) {
+        display: block;
+        width: 124px;
+
+
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 188px;
+        position: absolute;
+        bottom: 165px;
+        left: 55px;
+    }
+}
+
+.description {
+    display: none;
+    width: 114px;
+    height: 48px;
+    left: 154px;
+    top: 292px;
+
+
+
+    @media screen and (min-width:768px) {
+        display: block;
+        margin-left: 115px;
+        // margin-top: 66px;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: block;
+        margin-top: 115px;
+    }
+}
+
+.description-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 150%;
+    /* or 12px */
+    color: var(--text-white-color);
+}
+
+.description-btn {
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+}
+
+.counter-wrap {
+    display: flex;
+}
+
+.count {
+    display: none;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    &>span {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        /* identical to box height */
+
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--title-color);
+        background-image: url('../images/small-circle.png');
+        background-repeat: no-repeat;
+        background-size: 16px;
+        background-position: right top;
+        text-align: start;
+    }
+
+    &>p {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        color: var(--text-white-color);
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 53px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
 }
