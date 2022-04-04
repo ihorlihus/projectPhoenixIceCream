@@ -66,7 +66,7 @@
         width: 280px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and(max-width:1199px){
         width: 220px;
         flex-basis: calc(100% / 3 - 40px);
         margin-left: 20px;
@@ -78,7 +78,7 @@
         height: 525px;
         margin-left: 30px;
         margin-right: 0;
-        width: calc(100% / 3 - 40px);
+        width: calc(100% / 3 - 60px);
     }
 }
 
@@ -230,9 +230,8 @@
 }
 
 .products__text {
-    position: absolute;
+    position:relative;
     transform: translateY(205px);
-    // width: 200px;
     font-family: 'DM Sans';
     font-weight: 700;
     font-size: 14px;
@@ -241,25 +240,27 @@
     margin-bottom: 30px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
-    margin-left: 41px;
-    margin-right: 39px;
+    padding-left: 41px;
+    padding-right: 39px;
 
     @media screen and (min-width: 768px) {
-        display: inline-block;
+        display: block;
         line-height: 1.78;
         width: 198px;
-        margin-left: 11px;
-        margin-right: 11px;
+        margin: 0 auto;
+        padding-left: 11px;
+        padding-right: 11px;
         transform: translateY(210px);
     }
 
     @media screen and (min-width: 1200px) {
-        display: inline-block;
+        display: block;
         font-size: 16px;
         line-height: 1.75;
         width: 241px;
-        margin-left: 44px;
-        margin-right: 44px;
+        margin: 0 auto;
+        padding-left: 44px;
+        padding-right: 44px;
     }
 
 }
@@ -301,36 +302,3 @@ details summary::before {
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 480px){
-    .container {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .products{
-        padding-top: 121px;
-        padding-bottom: 98px;
-    }
-   }
-@media screen and (min-width: 768px) and (max-width:1199px){
-    .container {
-        width: 768px;
-        padding-left: 34px;
-        padding-right: 34px;
-    }
-    .products {
-        padding-top: 122px;
-        padding-bottom: 112px;
-    }
-}
-@media screen and (min-width: 1280px) {
-    .container {
-        width: 1200px;
-        padding-left: 116px;
-        padding-right: 116px;
-    }
-    .products {
-        padding-top: 127px;
-        padding-bottom: 119px;
-    }
-}
