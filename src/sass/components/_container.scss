@@ -5,21 +5,3 @@
   margin-right: auto;
 }
 
-@media screen and (min-width: $mobile) {
-  .container {
-    max-width: $mobile;
-  }
-}
-
-@media screen and (min-width: $tablet) {
-  .container {
-    max-width: $tablet;
-  }
-}
-
-@media screen and (min-width: $desktop) {
-  .container {
-    max-width: $desktop;
-  }
-}
-
