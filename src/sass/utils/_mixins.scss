@@ -1,0 +1,52 @@
+@mixin tel-mini {
+  @media screen and (min-width: 300px) and (max-width: 391px) {
+    @content;
+  }
+}
+
+@mixin tel {
+  @media screen and(min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tel-only {
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tel-max {
+  @media screen and(max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and(min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tab-only {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    @content;
+  }
+}
+@mixin tab-max {
+  @media screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desk {
+  @media screen and(min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin pixel-2x {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
