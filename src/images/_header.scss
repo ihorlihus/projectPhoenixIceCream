@@ -1,100 +1,89 @@
-.header {
+.header{
     background-color: var(--main-bg-color);
     background-image: url('../images/ice-cream-hero.png'), url('../images/Ellipse-pink-hero.png');
     background-repeat: no-repeat;
     background-size: 171px, 364px;
     background-position: right 32px top 92px, right -80px top 83px;
-
     @media screen and (min-width: 768px) {
-        background-image:
-            url('../images/so-tasty-hero.png'),
-            url('../images/ice-cream-hero.png'),
-            url('../images/Ellipse-pink-hero.png'),
-            url('../images/milk.png');
-        background-position:
-            right 34px bottom,
-            right 247px top 63px,
-            right 137px top 31px,
-            left 34px bottom 28px;
+        background-image: 
+        url('../images/so-tasty-hero.png'), 
+        url('../images/ice-cream-hero.png'),
+        url('../images/Ellipse-pink-hero.png'),
+        url('../images/milk.png');
+        background-position: 
+        right 34px bottom,
+        right 247px top 63px,
+        right 137px top 31px, 
+        left 34px bottom 28px;
         background-size:
-            168px,
-            171px,
-            364px,
-            124px;
+        168px, 
+        171px,
+        364px,
+        124px;
     }
 }
-
-.menu-wraper {
+.menu-wraper{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 6px;
-
     @media screen and (min-width: 768px) {
-        padding-top: 37px;
-    }
-
+            padding-top: 37px;
+        }
+    
 }
 
 .logo {
     width: 199px;
     height: 50px;
 }
-
-.button-header {
+.button-header{
     color: var(--title-color);
-    background-color: var(--text-white-color);
-    border: none;
-    cursor: pointer;
-
-    font-family: 'DM Sans';
-    border-radius: 22px;
-    justify-content: center;
-    min-width: 160px;
-    min-height: 44px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+        background-color: var(--text-white-color);
+        border: none;
+        cursor: pointer;
+    
+        font-family: 'DM Sans';
+        border-radius: 22px;
+        justify-content: center;
+        min-width: 160px;
+        min-height: 44px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
     display: none;
 
     @media screen and (min-width: 768px) {
         display: block;
         margin-left: 30px;
     }
-
     @media screen and (min-width: 1200px) {
         margin-left: 0;
     }
 }
-
 .site-nav {
     display: none;
-
     @media screen and (min-width: 1200px) {
         display: block;
         align-items: center;
     }
 }
-
 .menu-open-btn {
     display: flex;
     border: none;
     cursor: pointer;
     background-color: transparent;
 }
-
-.helper {
+.helper{
     display: flex;
     align-items: center;
 }
-
-.btn-menu {
+.btn-menu{
     @media screen and (min-width: 1200px) {
-        display: none;
-    }
+                display: none;
+            }
 }
-
 .site-list {
     display: flex;
 }
@@ -102,7 +91,6 @@
 .site-list .site-list__item:not(:last-child) {
     margin-right: 35px;
 }
-
 .site-list__link {
     display: inline-flex;
     color: var(--text-white-color);
@@ -112,44 +100,38 @@
     font-size: 16px;
     line-height: 1.31;
 }
-
-.hero {
+.hero{
     // background-color: transparent;
     padding-top: 137px;
     padding-bottom: 160px;
-
-    @media screen and (min-width:768px) {
+    @media screen  and (min-width:768px) {
         padding-top: 15px;
     }
 }
-
 .title {
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--text-white-color);
-    margin-bottom: 20px;
-
-    &>span {
-        color: var(--title-color);
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--text-white-color);
+        margin-bottom: 20px;
+        &>span {
+            color: var(--title-color);
+        }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 25px;
+        }
     }
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 25px;
-    }
-}
-
-.thumb-ice {
+.thumb-ice{
     max-width: 171px;
     position: absolute;
     top: 50px;
 }
-
-.thumb-elipse {
+.thumb-elipse{
     max-width: 346px;
     position: absolute;
     right: 0;
