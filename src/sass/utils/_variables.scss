@@ -6,7 +6,7 @@
   --main-bg-color: #FFB8CA;
   --secondary-bg-color: #FFF5F6;
   --hover-color: #D41443;
-  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 main-font {
@@ -16,3 +16,7 @@ main-font {
 second-font {
   font-family: DM Sans, sans-serif;
 }
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

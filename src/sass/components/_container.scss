@@ -1,5 +1,25 @@
 .container {
-  width: 100%;
-  padding-bottom: 20px;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+@media screen and (min-width: $mobile) {
+  .container {
+    max-width: $mobile;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .container {
+    max-width: $tablet;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .container {
+    max-width: $desktop;
+  }
+}
+
