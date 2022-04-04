@@ -56,6 +56,11 @@
 .logo {
     width: 199px;
     height: 50px;
+    @media screen and (min-width: 1200px) {
+            position: absolute;
+            top: 37px;
+            left: 46px;
+    }
 }
 
 .button-header {
@@ -74,6 +79,12 @@
     font-size: 16px;
     line-height: 1.31;
     display: none;
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-bg-color-hover);
+        transition: var(--animation-timing-function);
+    }
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -128,6 +139,12 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
+
+    &:hover,
+    &:focus {
+        color: var(--title-color);
+        transition: var(--animation-timing-function);
+    }
 }
 
 .hero {
@@ -282,4 +299,7 @@
         /* identical to box height */
         letter-spacing: 0.04em;
     }
+}
+.button-vectoricon {
+    margin-left: 13px;
 }
