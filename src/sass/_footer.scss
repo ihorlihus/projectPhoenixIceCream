@@ -112,7 +112,8 @@
     text-align: center;
     width: 150px;
     margin: 0 auto;
-    padding-top: 22px;
+    padding: 22px 0px 43px 0px;
+
     @media screen and(min-width:768px) {
         line-height: 1.86;
         width: 276px;
@@ -151,6 +152,5 @@
 
 
 .footer{
-    padding: 60px 0 43px;
     background-color: var(--secondary-bg-color);
 }
