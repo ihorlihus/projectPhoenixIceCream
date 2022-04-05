@@ -1,0 +1,17 @@
+.button-universal {
+    color: var(--title-color);
+    background-color: var(--text-white-color);
+    transition: background-color var(--animation-timing-function);
+    cursor: pointer;
+
+    font-family: 'DM Sans';
+    border: none;
+    justify-content: center;
+    min-width: 160px;
+    min-height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 22px;
+    line-height: 1.31;
+}
