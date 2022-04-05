@@ -1,6 +1,36 @@
 
 //----->Utils<-----
 
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.is-hidden{
+   opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.267);
+  position: fixed;
+  top: 0;
+  transition: opacity 500ms, visibility 500ms;
+}
+
+
  //-->Font
 
  @mixin font ($font-family, $font-style, $font-weight, $font-size, $line-height, $text-decoration, $letter-spacing){
@@ -56,9 +86,10 @@
   
   .modal-menu{
     width: 250px;
+    @include default{height: 502px;}
     @include phone{height: 502px;}
     @include tablet{height: 1200px;}
-    height: 502px;
+    //height: 502px;
     background-color: #E17992;
     border: 2px solid #E17992;
     border-radius: 5px;
