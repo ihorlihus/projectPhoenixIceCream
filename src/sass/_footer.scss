@@ -63,12 +63,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 32px;
-        height: 32px;
+        width: 34px;
+        height: 34px;
         border-radius: 50%;
         background-color: #FEA5BB;
         fill:#fff;
-        transition: background-color 250ms var(--animation-timing-function);
+        transition: background-color  var(--animation-timing-function);
         &:hover,
         &:focus{
         background-color: var(--title-color);
@@ -129,20 +129,21 @@
 
 .footer-container{
     margin: 0px auto;
+    width: 100%;
 
     @media screen and (min-width: 320px) {
-        width: 280px;
+        width: 320px;
         padding: 0 20px;
     }
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-        width: 700px;
+        width: 768px;
         padding: 0 34px;
 
     }
     @media screen and (min-width: 1200px) {
-        width:970px;
+        width:1200px;
         padding: 0 115px;
     }
 }
