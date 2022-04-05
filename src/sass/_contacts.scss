@@ -158,6 +158,12 @@ color: var(--main-text-color);
 .button-universal.location-btn {
     color: var(--text-white-color);
     background-color: var(--bcg-color-btn);
+
+    &:hover,
+    &:focus {
+        background-color: var(--bcg-hover-button-red);
+    }
+
     @media screen and (max-width: 768px) {
         margin-bottom: 10px; 
     }
@@ -168,7 +174,10 @@ color: var(--main-text-color);
     @media screen and (min-width: 1200px) {
         min-width: 198px;
     }
+
+
 }
+
 
 .button-universal.franchise-btn {
     @media screen and (min-width: 768px) {
@@ -177,8 +186,9 @@ color: var(--main-text-color);
     @media screen and (min-width: 1200px) {
         min-width: 180px;
     }
-}
 
-.vector-local {
-   fill: currentColor;
+    &:hover,
+    &:focus {
+        background-color: var(--bcg-hover-button-secondary);
+    }
 }
