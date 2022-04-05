@@ -144,57 +144,41 @@ color: var(--main-text-color);
         font-size: 16px;
     }
 }
-// contacts__btn
-.contacts-buttons{
+
+.contact-buttons-list {
+    display: block;
+    align-items: center;
+    text-align: center;
     @media screen and(min-width: 768px) {
         display: flex;
         justify-content: center;
     }
-    & .contacts-buttons__item + .contacts-buttons__item{
-        @media screen and(min-width: 768px) {
-            margin-left: 15px;
-        }
-    }
-}
-.contacts-buttons__item{
-    @media screen  and(max-width: 767px) {
-        &:not(:last-child){
-            margin-bottom: 10px;
-        }
-    }
 }
 
-.contacts__btn{
-    
-    display: block;
-    align-items: center;
-    text-align: center;
-
-    min-width: 162px;
-    padding: 17px 10px;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    border-radius: 22px;
-
-    border: transparent;
-    cursor: pointer;
-    &.contacts__btn--first{
-        background: #D41342;
-        color: #FFFFFF;
+.button-universal.location-btn {
+    color: var(--text-white-color);
+    background-color: var(--bcg-color-btn);
+    @media screen and (max-width: 768px) {
+        margin-bottom: 10px; 
     }
-    &.contacts__btn--sec{
-        background: #fff;
-        color: #D41342;
+    @media screen and (min-width: 768px) {
+        margin-right: 15px;
+        min-width: 191px;
     }
-
-    @media screen and(max-width: 767px) {
-        margin: auto;
+    @media screen and (min-width: 1200px) {
+        min-width: 198px;
     }
 }
 
-.contacts__icon{
-    margin-left: 12px;
-    fill: currentColor;
+.button-universal.franchise-btn {
+    @media screen and (min-width: 768px) {
+        min-width: 174px;
+    }
+    @media screen and (min-width: 1200px) {
+        min-width: 180px;
+    }
+}
+
+.vector-local {
+   fill: currentColor;
 }

@@ -240,38 +240,16 @@
 		}
 }
 
-.inner-text-about__button {
-	text-decoration: none;
-	overflow: hidden;
-	font-family: 'DM Sans';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 21px;
-	display: inline-flex;
-	align-items: center;
-	text-align: center;
-
-	color: var(--title-color);
-
-	padding: 11px 36px;
-	background-color: var(--text-white-color);
-	border-radius: 22px;
-	transition: background-color var(--animation-timing-function);
-}
-
-.inner-text-about__button:hover,
-.inner-text-about__button:focus {
-	background-color: #ECEBEB;;
-}
-
-.inner-text-about__button::after {
-	content: "";
-	display: block;
-	margin-left: 14px;
-	width: 9px;
-	height: 9px;
-	background-image: url("../images/about/svg/icon.svg");
-	background-repeat: no-repeat;
-	background-size: contain;
+.button-universal.read-more-btn{
+	min-width: 176px;
+	font-size: 14px;
+	line-height: 1.28px;
+	@media screen and (min-width: 1200px) {
+		font-size: 16px;
+		line-height: 1.31;
+	}
+	&:hover,
+	&:focus {
+		background-color: var(--bcg-hover-button-secondary);
+	}
 }
