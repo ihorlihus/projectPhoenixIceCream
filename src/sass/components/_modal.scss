@@ -1,0 +1,180 @@
+
+//----->Utils<-----
+
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.is-hidden{
+   opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.267);
+  position: fixed;
+  top: 0;
+  transition: opacity 500ms, visibility 500ms;
+}
+
+
+ //-->Font
+
+ @mixin font ($font-family, $font-style, $font-weight, $font-size, $line-height, $text-decoration, $letter-spacing){
+    font-family: $font-family; 
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    text-decoration: $text-decoration;
+    letter-spacing: $letter-spacing;
+  }
+  //--------------------------------
+  
+  //-->Devices
+  //Default
+  @mixin default{
+    @media screen and (min-width: 320px) { 
+      @content;
+      }
+  }
+  
+  //Phone 480px
+  @mixin phone{
+    @media screen and (min-width: 480px) {
+      @content;  
+      }
+  }
+  
+  //Tablet 768px
+  @mixin tablet{
+    @media screen and (min-width: 768px) {
+      @content;  
+      }
+  }
+  
+  //Desktop 1200px
+  @mixin desktop{
+    @media screen and (min-width: 1200px) {
+    @content;  
+    }
+  }
+  //--------------------------------
+  
+  
+  
+  .container {
+    width: 100%;
+    padding-bottom: 24px;
+    margin: 0 auto;
+    
+  
+  }
+  
+  .modal-menu{
+    width: 250px;
+    @include default{height: 502px;}
+    @include phone{height: 502px;}
+    @include tablet{height: 1200px;}
+    //height: 502px;
+    background-color: #E17992;
+    border: 2px solid #E17992;
+    border-radius: 5px;
+  
+   
+    &__list{margin-top: 20px;}
+  
+    &__item{
+      width: 245px;
+      height: 42;
+      outline: 1px solid #E18298;
+      padding-top:12px;
+      padding-bottom: 12px;
+      padding-left: 21px;
+    }
+  
+  
+  &__link{
+    @include font(DM Sans, normal, bold, 14px, 18px, none, none);
+  align-items: center;
+  vertical-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  }
+  
+  &__link_active{
+    @include font(DM Sans, normal, bold, 14px, 18px, none, none);
+    align-items: center;
+    vertical-align: center;
+    color: #D41443;
+    text-decoration: none;
+    }
+  
+  }
+  
+  //Button CSS
+  
+  .modal-menu__button{
+    @include font(DM Sans, normal, 700, 16px, 21px, none, none);
+    border: none;
+    color: #D41443;
+    background: #ffffff;
+    border-radius: 22px;
+    width: 210px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    outline:none;
+    transition: color 300ms linear, background-color 300ms linear;
+  
+  
+    &:hover, 
+    &:focus {
+        color:      #ffffff;
+        background: #D41443;
+        
+  
+     }
+  // Button.text
+    &_text{
+      padding-left: 15px;
+      @include font(DM Sans, normal, 700, 16px, 21px, none, none);
+        color: #D41443;
+        transition: color 300ms linear, background-color 300ms linear;
+      
+    &:hover, 
+    &:focus {
+        color: #ffffff;
+        background: #D41443;
+         }
+       }
+  }
+  
+  
+  
+  
+  
+  .modal-close-icon{
+    position: absolute;
+    margin-left: 208px;
+    fill: #ffffff;
+     &:focus,
+        &:hover{
+          fill: #D41443;; 
+          outline:none;
+       }
+      }
