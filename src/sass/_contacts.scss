@@ -1,23 +1,20 @@
 .contacts{
-    padding-top: 86px;
-    padding-bottom: 113px;
+    padding-bottom: 48px;
 
     @media screen and(min-width: 768px) {
-        padding-top: 119px;
-        padding-bottom: 158px;
+        padding-bottom: 40px;
     }
 
     @media screen and(min-width: 1280px) {
-        padding-top: 132px;
-        padding-bottom: 165px;
+        padding-bottom: 120px;
     }
 
-    background-image: linear-gradient(to top, #fff5f6 75%, #fff 75%);
+    background-image: linear-gradient(to top, #fff5f6 78%, #fff 78%);
     @include tab{
-        background-image: linear-gradient(to top, #fff5f6 72%, #fff 72%);
+        background-image: linear-gradient(to top, #fff5f6 80%, #fff 80%);
     }
     @include desk{
-        background-image: linear-gradient(to top, #fff5f6 75%, #fff 75%);
+        background-image: linear-gradient(to top, #fff5f6 85%, #fff 85%);
     }
 }
 
@@ -192,9 +189,6 @@ color: var(--main-text-color);
     display: block;
     align-items: center;
     text-align: center;
-    @media screen and(min-width: 768px) {
-      
-    }
 }
 
 .location-btn {
@@ -215,7 +209,7 @@ color: var(--main-text-color);
         background-color: var(--bcg-hover-button-red);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 10px;
     }
 
