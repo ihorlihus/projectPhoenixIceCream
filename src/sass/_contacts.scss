@@ -9,12 +9,12 @@
         padding-bottom: 120px;
     }
 
-    background-image: linear-gradient(to top, #fff5f6 75%, #fff 75%);
+    background-image: linear-gradient(to top, #fff5f6 78%, #fff 78%);
     @include tab{
-        background-image: linear-gradient(to top, #fff5f6 72%, #fff 72%);
+        background-image: linear-gradient(to top, #fff5f6 80%, #fff 80%);
     }
     @include desk{
-        background-image: linear-gradient(to top, #fff5f6 75%, #fff 75%);
+        background-image: linear-gradient(to top, #fff5f6 85%, #fff 85%);
     }
 }
 
