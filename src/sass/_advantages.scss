@@ -2,7 +2,7 @@
     background-color: var(--secondary-bg-color);
 }
     
-.container--advantages {
+.advantages__container {
     width: 100%;
     padding-bottom: 97px;
     padding-left: 20px;
@@ -10,18 +10,19 @@
     margin: 0 auto;
 
     @media screen and (min-width: 320px) {
-        min-width: 320px;
+        width: 320px;
     }
     
     @media screen and (min-width: 768px) {
         width: 768px;
         padding-bottom: 140px;
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-left: 36px;
+        padding-right: 36px;
     }
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        padding-bottom: 139px;
         padding-left: 115px;
         padding-right: 115px;
     }
@@ -34,7 +35,7 @@
         margin-left: -60px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-left: -30px;
     }
 }
@@ -52,7 +53,7 @@
         margin-bottom: 36px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 40px;
     }
 }
@@ -78,7 +79,7 @@
         margin-left: 60px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         width: calc(100%/3 - 30px);
         margin-left: 30px;
     }
@@ -106,7 +107,7 @@
         line-height: 1.15;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         font-size: 58px;
         line-height: 1.14;
         margin-bottom: 15px;
@@ -119,18 +120,18 @@
     font-size: 12px;
     line-height: 1.7;
     color: var(--main-text-color);
-    max-width: 230px;
+    @media screen and (max-width: 767px) {
+        max-width: 230px;
+    }
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.74;
-        width: 180px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         font-size: 16px;
         line-height: 1.76;
         letter-spacing: 0.02em;
-        width: 330px;
     }
 }
