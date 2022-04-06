@@ -1,29 +1,44 @@
-.header {
+.head-hero{
     background-color: var(--main-bg-color);
-    background-image: url('../images/ice-cream-hero.png'), url('../images/Ellipse-pink-hero.png');
-    background-repeat: no-repeat;
-    background-size: 171px, 364px;
-    background-position: right 32px top 92px, right -80px top 83px;
-
+    // height: 100vh;
+   
+}
+.container__header-hero{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--main-bg-color);
+    position: relative;
     @media screen and (min-width: 768px) {
-        background-image:
-            url('../images/so-tasty-hero.png'),
-            url('../images/ice-cream-hero.png'),
-            url('../images/Ellipse-pink-hero.png'),
-            url('../images/milk.png');
-        background-position:
-            right 34px bottom,
-            right 247px top 63px,
-            right 137px top 31px,
-            left 34px bottom 28px;
-        background-size:
-            168px,
-            171px,
-            364px,
-            124px;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-left: 115px;
+        padding-right: 115px;
+    }
+    @media screen and (min-width: 320px) {
+        min-height: 500px;
+        background-image: url('../images/hero/ellipse-mobile1.png');
+        background-repeat: no-repeat;
+        background-position: right top 85px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        min-height: 399px;
+        background-image: url('../images/hero/elipse-tablet1.png');
+        background-repeat: no-repeat;
+        background-position: right 140px top 30px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        min-height: 665px;
+        background-image: url('../images/hero/elipse-desctop1.png');
+        background-repeat: no-repeat;
+        background-position: right 265px top 50px;
     }
 }
-
+// HEADER
+// +++++++++++++++++
 .menu-wraper {
     display: flex;
     align-items: center;
@@ -35,84 +50,13 @@
     }
 
 }
-
 .logo {
     width: 199px;
     height: 50px;
-}
-
-
-.button-position-header {
-    display: flex;
-}
-
-
-.button-universal.purchase-btn { 
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-    
-    @media screen and (min-width: 768px) {
-        margin-left: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-left: 0;
+    @media screen and (min-width: 1280px) {
+        transform: translateX(-70px);
     }
 }
-
-.button-universal.product-btn {
-    display: inline-flex;
-    align-items: center;
-    color: var(--text-white-color);
-    background-color: var(--bcg-color-btn);
-    border-radius: 20px;
-    min-height: 24px;
-    font-family: 'DM Sans';
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 1.25;
-    margin-right: 8px;
-    min-width: 63px;
-    &:hover,
-    &:focus {
-        background-color: var(--bcg-hover-button-red);
-    }
-
-    @media screen and (min-width: 1200px) {
-    margin-right: 15px;
-    height: 40px;
-    width: 104px;
-    font-size: 14px;
-    line-height: 1.3;
-    }
-}
-
-
-.button-universal.how-it’s-made-btn {
-    display: inline-flex;
-    align-items: center;
-    font-family: 'DM Sans';
-    line-height: 1.25;
-    font-weight: 400;
-    font-size: 8px;
-    line-height: 10px;
-    min-width: 83px;
-    min-height: 24px;
-    &:hover,
-    &:focus {
-        background-color: var(--button-bg-color-hover);
-    }
-
-    @media screen and (min-width: 1200px) {
-        height: 40px;
-        width: 138px;
-        font-size: 14px;
-        line-height: 1.3;
-    }
-}
-
-
 .site-nav {
     display: none;
 
@@ -121,34 +65,12 @@
         align-items: center;
     }
 }
-
-.btn-menu__open {
-    display: flex;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-     
-}
-
-.helper {
-    display: flex;
-    align-items: center;
-}
-
-.btn-menu {
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-}
-
 .site-list {
     display: flex;
 }
-
 .site-list .site-list__item:not(:last-child) {
     margin-right: 35px;
 }
-
 .site-list__link {
     display: inline-flex;
     color: var(--text-white-color);
@@ -158,17 +80,46 @@
     font-size: 16px;
     line-height: 1.31;
 }
-
-.hero {
-    // background-color: transparent;
-    padding-top: 137px;
-    padding-bottom: 160px;
-
-    @media screen and (min-width:768px) {
-        padding-top: 15px;
+.helper {
+    display: flex;
+    align-items: center;
+}
+.btn-menu {
+    @media screen and (min-width: 1200px) {
+        display: none;
     }
 }
+.btn-menu__open {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
 
+
+.button-universal.purchase-btn {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+    }
+}
+// =======================
+
+//  HERO
+
+.hero {
+    // @media screen and (min-width: 320px) {
+    //     padding-top: 135px;
+    // }
+    
+}
 .title {
     font-family: 'Titan One';
     font-style: normal;
@@ -184,24 +135,204 @@
         color: var(--title-color);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 25px;
     }
 }
-
-.thumb-ice {
-    max-width: 171px;
-    position: absolute;
-    top: 50px;
+.button-position-header {
+    display: flex;
 }
+.button-universal.product-btn {
+    display: inline-flex;
+    align-items: center;
+    color: var(--text-white-color);
+    background-color: var(--bcg-color-btn);
+    border-radius: 20px;
+    min-height: 24px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    margin-right: 8px;
+    min-width: 63px;
 
-.thumb-elipse {
-    max-width: 346px;
-    position: absolute;
-    right: 0;
-    top: 50px;
+    &:hover,
+    &:focus {
+        background-color: var(--bcg-hover-button-red);
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 15px;
+        height: 40px;
+        width: 104px;
+        font-size: 14px;
+        line-height: 1.3;
+    }
 }
+.button-universal.how-it’s-made-btn {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'DM Sans';
+    line-height: 1.25;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    min-width: 83px;
+    min-height: 24px;
 
+    &:hover,
+    &:focus {
+        background-color: var(--button-bg-color-hover);
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 40px;
+        width: 138px;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
 .button-vector {
     margin-left: 13px;
 }
+
+.thumb-ice {
+    
+    @media screen and (min-width: 320px) {
+        position: absolute;
+        max-width: 171px;
+        top: 152px;
+        right: 30px;
+    }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        max-width: 143px;
+        top: 55px;
+        right: 250px;
+    }
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        min-width: 236px;
+        top: 98px;
+        right: 450px;
+    }
+}
+.wraper__text-btn{
+    @media screen and (min-width: 320px) {
+        position: absolute;
+        top: 195px;
+    }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 100px;
+    }
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        top: 170px;
+    }
+}
+.thumb-milk{
+    opacity: 0;
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        bottom: 30px;
+        max-width: 124px;
+        opacity: 1;
+    }
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        bottom: 45px;
+        max-width: 190px;
+        opacity: 1;
+    }
+    @media screen and (min-width: 1280px) {
+        transform: translateX(-40px);
+    }
+}
+.thumb-tasty{
+    opacity: 0;
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        bottom: 0px;
+        right: 35px;
+        max-width: 168px;
+        opacity: 1;
+    }
+    @media screen and (min-width: 1280px) {
+        position: absolute;
+        bottom: 0px;
+        max-width: 290px;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .thumb-elipse {
+//     max-width: 346px;
+//     position: absolute;
+//     right: 0;
+//     top: 50px;
+// }
+
+
+
+
+
+
+// +++++++++++++++
+
+// .header {
+//     background-color: var(--main-bg-color);
+//     background-image: url('../images/ice-cream-hero.png'), url('../images/Ellipse-pink-hero.png');
+//     background-repeat: no-repeat;
+//     background-size: 171px, 364px;
+//     background-position: right 32px top 92px, right -80px top 83px;
+
+//     @media screen and (min-width: 768px) {
+//         background-image:
+//             url('../images/so-tasty-hero.png'),
+//             url('../images/ice-cream-hero.png'),
+//             url('../images/Ellipse-pink-hero.png'),
+//             url('../images/milk.png');
+//         background-position:
+//             right 34px bottom,
+//             right 247px top 63px,
+//             right 137px top 31px,
+//             left 34px bottom 28px;
+//         background-size:
+//             168px,
+//             171px,
+//             364px,
+//             124px;
+//     }
+// }
