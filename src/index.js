@@ -19,11 +19,13 @@ import './sass/main.scss';
 	 refs.openAboutModalBtn.addEventListener('click', toggleModalAbout);
     refs.closeAboutModalBtn.addEventListener('click', toggleModalAbout);
   
-    function toggleModal() {
+  function toggleModal() {
+      document.body.classList.toggle("modal-open");
       refs.modal.classList.toggle("is-hidden");
     }
 
-	 function toggleModalAbout() {
+  function toggleModalAbout() {
+     document.body.classList.toggle("modal-open");
 		refs.modalAbout.classList.toggle("is-hidden");
 	 }
 

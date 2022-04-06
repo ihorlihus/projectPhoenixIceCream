@@ -278,19 +278,16 @@
   font-size: 14px;
   line-height: 1.52;
   text-align: center;
-  margin-bottom: 30px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  //   padding-left: 41px;
-  //   padding-right: 39px;
+  margin: 0 auto;
+  width: 200px;
 
   @media screen and (min-width: 768px) {
     display: block;
     line-height: 1.78;
     width: 198px;
     margin: 0 auto;
-    // padding-left: 11px;
-    // padding-right: 11px;
     transform: translateY(210px);
   }
 
@@ -300,8 +297,6 @@
     line-height: 1.75;
     width: 241px;
     margin: 0 auto;
-    // padding-left: 44px;
-    // padding-right: 44px;
   }
 }
 
@@ -312,13 +307,18 @@
   border-radius: 50%;
   border-color: transparent;
   background-color: #ffffff;
-  //   top: 0;
+  top:404px;
   left: 50%;
   transform: translate(-50%, 0);
   //   right: 0;
   bottom: 40px;
   position: absolute;
-  //   transform: translateY(404px);
+  @media screen and (min-width: 768px) {
+    top:405px;
+  }
+  @media screen and (min-width: 1200px) {
+    top:435px;
+  }
 }
 
 details summary::before {
@@ -332,12 +332,14 @@ details summary::before {
 }
 
 .products__about {
-  display: inline-flex;
+  display: inline-block;
+   width:150px;
   font-family: 'DM Sans';
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   color: #ffffff;
-  padding-top: 10px;
-  text-align: start;
+  padding-top: 25px;
+  text-align: center;
+  white-space: nowrap;
 }
+

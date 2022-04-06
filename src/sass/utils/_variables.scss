@@ -19,3 +19,6 @@ main-font {
 second-font {
   font-family: DM Sans, sans-serif;
 }
+body.modal-open{
+  overflow: hidden;
+}
