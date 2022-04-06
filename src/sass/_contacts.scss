@@ -189,17 +189,18 @@ color: var(--main-text-color);
 }
 
 .contact-buttons {
-    display: inline-block;
+    display: block;
     align-items: center;
     text-align: center;
     @media screen and(min-width: 768px) {
-        display: flex;
-        justify-content: center;
+      
     }
 }
 
 .location-btn {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-family: DM Sans;
     color: var(--text-white-color);
     background-color: var(--bcg-color-btn);
