@@ -127,45 +127,42 @@
   
   //Button CSS
   
-.button-universal.btn-modal {
-  min-width: 209px;
-}
-
-  // .modal-menu__button{
-  //   @include font(DM Sans, normal, 700, 16px, 21px, none, none);
-  //   border: none;
-  //   color: #D41443;
-  //   background: #ffffff;
-  //   border-radius: 22px;
-  //   width: 210px;
-  //   height: 44px;
-  //   display: block;
-  //   margin: 0 auto;
-  //   margin-top: 25px;
-  //   outline:none;
-  //   transition: color 300ms linear, background-color 300ms linear;
+  .modal-menu__button{
+    @include font(DM Sans, normal, 700, 16px, 21px, none, none);
+    border: none;
+    color: #D41443;
+    background: #ffffff;
+    border-radius: 22px;
+    width: 210px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    outline:none;
+    transition: color 300ms linear, background-color 300ms linear;
   
   
-  //   &:hover, 
-  //   &:focus {
-  //     color:      #ffffff;
-  //     background: #D41443;
-  //    }
-
-  // // Button.text
-  //   &_text{
-  //     padding-left: 15px;
-  //     @include font(DM Sans, normal, 700, 16px, 21px, none, none);
-  //       color: #D41443;
-  //       transition: color 300ms linear, background-color 300ms linear;
+    &:hover, 
+    &:focus {
+        color:      #ffffff;
+        background: #D41443;
+        
+  
+     }
+  // Button.text
+    &_text{
+      padding-left: 15px;
+      @include font(DM Sans, normal, 700, 16px, 21px, none, none);
+        color: #D41443;
+        transition: color 300ms linear, background-color 300ms linear;
       
-  //   &:hover, 
-  //   &:focus {
-  //       color: #ffffff;
-  //       background: #D41443;
-  //        }
-  //      }
-  // }
+    &:hover, 
+    &:focus {
+        color: #ffffff;
+        background: #D41443;
+         }
+       }
+  }
   
   
   
