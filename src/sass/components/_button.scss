@@ -3,7 +3,8 @@
     background-color: var(--text-white-color);
     transition: background-color var(--animation-timing-function);
     cursor: pointer;
-
+    display: inline-flex;
+    align-items: center;
     font-family: 'DM Sans';
     border: none;
     justify-content: center;
