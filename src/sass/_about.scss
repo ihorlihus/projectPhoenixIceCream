@@ -1,3 +1,7 @@
+body.data-modal-open {
+	overflow-y: hidden; 
+}
+
 .about {
 	padding: 125px 0px 39px 0px;
 	background-color: var(--secondary-bg-color);
@@ -6,17 +10,6 @@
 			padding: 130px 0px 66px 0px;
 	}
 	
-	@media screen and (min-width: 1200px) {
-		padding: 125px 0px 65px 0px;
-	}
-
-}
-
-.about {
-	@media screen and (min-width: 768px) {
-			padding: 130px 0px 66px 0px;
-	}
-
 	@media screen and (min-width: 1200px) {
 		padding: 125px 0px 65px 0px;
 	}
@@ -275,3 +268,6 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+
+
+
