@@ -1,13 +1,13 @@
 .head-hero{
     background-color: var(--main-bg-color);
     // height: 100vh;
-   
 }
+
 .container__header-hero{
     padding-left: 20px;
     padding-right: 20px;
     background-color: var(--main-bg-color);
-    position: relative;
+   
     @media screen and (min-width: 768px) {
         padding-left: 34px;
         padding-right: 34px;
@@ -15,6 +15,7 @@
     @media screen and (min-width: 1280px) {
         padding-left: 115px;
         padding-right: 115px;
+        position: relative;
     }
     @media screen and (min-width: 320px) {
         min-height: 500px;
@@ -49,12 +50,19 @@
         padding-top: 37px;
     }
 
-}
+}  
+
+// @media screen and (min-width: 1280px) {
+    //     transform: translateX(-70px);
+    // }
 .logo {
     width: 199px;
     height: 50px;
-    @media screen and (min-width: 1280px) {
-        transform: translateX(-70px);
+
+    @media screen and (min-width: 1200px) {
+        top: 34px;
+        left: 46px;
+        position: absolute;
     }
 }
 .site-nav {
@@ -79,6 +87,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
+    &:hover,
+    &:focus {
+        color: var(--title-color);
+        transition:  var(--animation-timing-function);
+    }
 }
 .helper {
     display: flex;
@@ -114,12 +127,12 @@
 
 //  HERO
 
-.hero {
-    // @media screen and (min-width: 320px) {
-    //     padding-top: 135px;
-    // }
+// .hero {
+//     @media screen and (min-width: 320px) {
+//         padding-top: 135px;
+//     }
     
-}
+// }
 .title {
     font-family: 'Titan One';
     font-style: normal;
