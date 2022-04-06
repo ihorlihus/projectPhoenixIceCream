@@ -1,15 +1,45 @@
+.contacts{
+    background-image: linear-gradient(to top, #fff5f6 75%, #fff 75%);
+    @include tab{
+        background-image: linear-gradient(to top, #fff5f6 72%, #fff 72%);
+    }
+    @include desk{
+        background-image: linear-gradient(to top, #fff5f6 75%, #fff 75%);
+    }
+}
+
+.container__contacts{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    @include tab{
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    @include desk{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
 .contacts__wrapper{
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     @media screen and(max-width: 767px) {
         width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
     @media screen and(min-width: 768px) {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
-    @media screen and(min-width: 1200px) {
-        padding-bottom: 60px;
+    @media screen and(min-width: 1280px) {
+        margin-bottom: 60px;
     }
 }
 .contacts-cards{
@@ -31,7 +61,7 @@
         flex-basis: calc(100% / 3 - 32px);
         margin: 16px;
     }
-    @media screen and(min-width: 1200px){
+    @media screen and(min-width: 1280px){
         padding: 40px;
     }
 }
@@ -59,7 +89,7 @@
     @media screen and(min-width: 768px) {
         margin-bottom: 32px;
     }
-    @media screen and(min-width: 1200px) {
+    @media screen and(min-width: 1280px) {
         font-size: 16px;
     }
 }
@@ -75,33 +105,39 @@
     @media screen and(min-width: 768px) {
         margin-bottom: 12px;
     }
-    @media screen and(min-width: 1200px) {
+    @media screen and(min-width: 1280px) {
         font-size: 16px;
     }
 
 }
 .contacts__descr{
+    margin-bottom: 24px;
+
     font-weight: 500;
     font-size: 12px;
     color: var(--second-text-color);
-    @media screen and(min-width: 1200px) {
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 32px;
+    }
+    @media screen and(min-width: 1280px) {
         font-size: 16px;
     }
 }
+
 .contacts__item{
-    &:not(:first-child){
-        padding-top: 24px;
+    &:not(:last-child){
+        margin-bottom: 24px;
     }
-    padding-bottom: 24px;
-    &:not(:last-child){border-bottom: 1px solid #E1E1E1;
+    
+    &:not(:last-child){
+        border-bottom: 1px solid #E1E1E1;
     }
     @media screen and(min-width: 768px) {
-        &:not(:first-child){
-            padding-top: 32px;
+        &:not(:last-child){
+            margin-bottom: 32px;
         }
-        padding-bottom: 32px;
     }
-        
 }
 .contacts__thumb{
     margin-bottom: 8px;
@@ -109,12 +145,18 @@
         margin-bottom: 12px;
     }
 }
+.contacts__wrap{
+    margin-bottom: 24px;
+    @media screen and(min-width: 768px) {
+        margin-bottom: 32px;
+    }
+}
 .contacts__work-days{
     font-weight: 500;
 font-size: 12px;
 line-height: 186%;
 color: var(--main-text-color);
-    @media screen and(min-width: 1200px) {
+    @media screen and(min-width: 1280px) {
         font-size: 16px;
     }
 }
@@ -123,7 +165,7 @@ color: var(--main-text-color);
     font-size: 12px;
     line-height: 186%;
     color: #FFA5BA;
-    @media screen and(min-width: 1200px) {
+    @media screen and(min-width: 1280px) {
         font-size: 16px;
     }
 }
@@ -140,7 +182,7 @@ color: var(--main-text-color);
         padding-top: 6px;
         padding-bottom: 6px;
     }
-    @media screen and(min-width: 1200px) {
+    @media screen and(min-width: 1280px) {
         font-size: 16px;
     }
 }
@@ -171,7 +213,7 @@ color: var(--main-text-color);
         margin-right: 15px;
         min-width: 191px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         min-width: 198px;
     }
 
@@ -183,7 +225,7 @@ color: var(--main-text-color);
     @media screen and (min-width: 768px) {
         min-width: 174px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         min-width: 180px;
     }
 
