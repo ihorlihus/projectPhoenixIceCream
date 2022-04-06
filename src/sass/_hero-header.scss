@@ -1,5 +1,5 @@
 .head-hero{
-    background-color: var(--main-bg-color);
+    // background-color: var(--main-bg-color);
     // height: 100vh;
    
 }
@@ -8,16 +8,20 @@
     padding-right: 20px;
     background-color: var(--main-bg-color);
     position: relative;
+    max-width: 480px;
+    margin: 0 auto;
     @media screen and (min-width: 768px) {
         padding-left: 34px;
         padding-right: 34px;
+        max-width: 768px;
     }
     @media screen and (min-width: 1280px) {
         padding-left: 115px;
         padding-right: 115px;
+        max-width: 1280px;
     }
     @media screen and (min-width: 320px) {
-        min-height: 500px;
+        // min-height: 500px;
         background-image: url('../images/hero/ellipse-mobile1.png');
         background-repeat: no-repeat;
         background-position: right top 85px;
@@ -44,6 +48,17 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 6px;
+        @media screen  and 
+        (min-width:320px)
+        and (max-width:479px){
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        padding: 8px 20px;
+        background-color: var(--main-bg-color);
+    }
 
     @media screen and (min-width: 768px) {
         padding-top: 37px;
@@ -200,8 +215,8 @@
     
     @media screen and (min-width: 320px) {
         position: absolute;
-        max-width: 171px;
-        top: 152px;
+        width: 171px;
+        top: 104px;
         right: 30px;
     }
     @media screen and (min-width: 768px) {
