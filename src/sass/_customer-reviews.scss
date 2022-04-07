@@ -38,8 +38,8 @@
 
     &::after {
         position: absolute;
-        top: 28px;
-        left: 61px;
+        top: 30px;
+        left: 53px;
         z-index: 0;
         content: " ";
         background-image: url(../images/Customer-reviews/quotes.svg);
@@ -52,7 +52,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        padding: 47px 36px 28px 60px;
+        padding: 37px 6px 36px 6px;
         width: 620px;
         margin: 0 auto 42px auto;
 
@@ -61,16 +61,17 @@
         }
 
         &::after {
-            top: 30px;
-            left: 40px;
+            top: 20px;
+            left: 6px;
         }
     }
 
     @media screen and (min-width: 1200px) {
-        width: 926px;
+        width: 1034px;
+        height: 138px;
         margin: 0 auto 34px auto;
-        padding: 47px 54px 32px 59px;
-    }
+        padding: 47px 107px 31px 105px;
+    
 
     &::before {
         bottom: -19px;
@@ -78,8 +79,8 @@
 
     &::after {
         top: 32px;
-        left: 50px;
-    }
+        left: 105px;
+    }}
 }
 
 .grad {
@@ -89,18 +90,22 @@
         max-width: 180px;
     }
 
-    margin: 0 auto;
+    margin: auto;
     width: 180px;
     background-image: repeating-linear-gradient(to top,
-        #e1e1e1 0px, transparent 1px, transparent 31px);
+        #e1e1e1 0px,#e1e1e1 1px, transparent 1px, transparent 31px);
 
     @media screen and (min-width: 768px) {
-        width: 524px;
+        width: 608px;
+        height: 90px;
+        background-image: repeating-linear-gradient(to top, #e1e1e1 0px,#e1e1e1 1px, transparent 1px, transparent 30px);
     }
 
     @media screen and (min-width: 1200px) {
-        width: 813px;
+        width: 822px;
+      height: 60px;
     }
+   
 }
 
 .customer__coment {
@@ -123,7 +128,7 @@
 
 
     @media screen and (min-width: 768px) {
-        width: 460px;
+        width: 514.12px;
         font-size: 14px;
         line-height: calc(30 / 14);
         letter-spacing: 0.04em;
