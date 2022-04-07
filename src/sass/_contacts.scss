@@ -13,7 +13,7 @@
     @include tab{
         background-image: linear-gradient(to top, #fff5f6 80%, #fff 80%);
     }
-    @include desk{
+    @media screen and (min-width: 1280px){
         background-image: linear-gradient(to top, #fff5f6 85%, #fff 85%);
     }
 }
@@ -21,15 +21,28 @@
 .container__contacts{
     width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .contacts__wrapper{
+
     @media screen and(max-width: 767px) {
         width: 280px;
         margin-left: auto;
         margin-right: auto;
+    }
+    @include tab{
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    @media screen and (min-width: 1280px){
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 .contacts-cards {
