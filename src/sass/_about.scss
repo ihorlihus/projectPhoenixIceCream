@@ -2,20 +2,45 @@
 	padding: 125px 0px 39px 0px;
 	background-color: var(--secondary-bg-color);
 
+	background-image: url("../images/about/bg/bgmob.png");
+	background-repeat: no-repeat;
+	background-position: 0 85%;
+	background-size: contain;
+
+	@media screen and (min-width: 480px) {
+		background-image: url("../images/about/bg/bgmob.png");
+		background-repeat: no-repeat;
+		background-position: 0 88%;
+		background-size: contain;
+	}
+
 	@media screen and (min-width: 768px) {
 			padding: 130px 0px 66px 0px;
+			background-image: none;
 	}
 	
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1280px) {
 		padding: 125px 0px 65px 0px;
+		background-image: url("../images/about/bg/bgpc.png");
+			background-repeat: no-repeat;
+			background-position: 0 80%;
+			background-size: contain;
+	}
+
+	@media screen and (min-width: 2156px) {
+		padding: 125px 0px 65px 0px;
+		background-image: url("../images/about/bg/bgpc.png");
+			background-repeat: no-repeat;
+			background-position: 300%;
+			background-size: cover;
 	}
 }
 
 .about__container {
-	background-image: url("../images/about/bg/bgmob.png");
-	background-repeat: no-repeat;
-	background-position: 0 90%;
-	background-size: contain;
+	// background-image: url("../images/about/bg/bgmob.png");
+	// background-repeat: no-repeat;
+	// background-position: 0 90%;
+	// background-size: contain;
 
 		@media screen and (max-width: 479px) {
 			width: 320px;
@@ -27,15 +52,15 @@
 
 		@media screen and (min-width: 768px) {
 			max-width: 768px;
-			background-image: none;
+			// background-image: none;
 		}
 
-		@media screen and (min-width: 1200px) {
-			max-width: 1200px;
-			background-image: url("../images/about/bg/bgpc.png");
-			background-repeat: no-repeat;
-			background-position: 0 165%;
-			background-size: contain;
+		@media screen and (min-width: 1280px) {
+			max-width: 1280px;
+			// background-image: url("../images/about/bg/bgpc.png");
+			// background-repeat: no-repeat;
+			// background-position: 0 165%;
+			// background-size: contain;
 		}
 
 }
@@ -55,7 +80,7 @@
 			padding: 0;
 		}
 
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1280px) {
 				margin-bottom: 55px;
 		}
 }
@@ -77,7 +102,7 @@
 			font-size: 26px;
 			line-height: 30px;
 		}
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1280px) {
 			font-size: 30px;
 			line-height: 34px;
 			letter-spacing: 0.04em;
@@ -103,7 +128,7 @@
 			line-height: 55px;
 		}
 
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1280px) {
 			font-size: 58px;
 			line-height: 66px;
 			letter-spacing: 0.06em;
@@ -119,8 +144,8 @@
 		padding: 0 34px;
 	}
 
-	@media screen and (min-width: 1200px) {
-		padding: 0 115px;
+	@media screen and (min-width: 1280px) {
+		padding: 0 112px;
 	}
 }
 
@@ -128,6 +153,10 @@
 .about__image img{
 	@media screen and (min-width: 480px) {
 		margin: 0 auto;
+	}
+
+	@media screen and (min-width: 1280px) {
+		width: 516px;
 	}
 }
 
@@ -139,10 +168,11 @@
 		bottom: 50px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1280px) {
 
 		position: relative;
 		bottom: 47px;
+		width: 516px;
 	}
 }
 
@@ -153,7 +183,7 @@
 	text-align: left;
 
 	
-	@media screen and (min-width: 479px) {
+	@media screen and (min-width: 479.99px) {
 		width: 380px;
 	}
 
@@ -164,7 +194,7 @@
 		margin-right: 0;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@media screen and (min-width: 1280px) {
 		flex: 0 0 463px;
 		margin-left: 74px;
 	}
@@ -178,11 +208,10 @@
 			margin-bottom: 62px;
 		}
 
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1280px) {
 			margin-bottom: 45px;
 		}
 }
-
 
 .inner-text-about__subtitle {
 	font-family: 'DM Sans';
@@ -199,16 +228,16 @@
 			letter-spacing: 0.04em;
 		}
 
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1280px) {
 			font-size: 14px;
 			line-height: 1.94;
 			letter-spacing: 0.04em;
 		}
 }
 
-
-.inner-text-about__subtitle_black {
-	color: var(--main-text-color);
+.inner-text-about__subtitle-black {
+	color: #000000;
+	// color: var(--main-text-color);
 	margin-bottom: 35px;
 
 		@media screen and (min-width: 768px) {
@@ -220,7 +249,7 @@
 
 		}
 
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1280px) {
 			font-size: 16px;
 			line-height: 1.76;
 
@@ -233,7 +262,8 @@
 	min-width: 176px;
 	font-size: 14px;
 	line-height: 1.28px;
-	@media screen and (min-width: 1200px) {
+	
+	@media screen and (min-width: 1280px) {
 		font-size: 16px;
 		line-height: 1.31;
 	}
