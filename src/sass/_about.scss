@@ -4,7 +4,7 @@
 
 	background-image: url("../images/about/bg/bgmob.png");
 	background-repeat: no-repeat;
-	background-position: 0 77%;
+	background-position: 0 71%;
 	background-size: contain;
 
 	@media screen and (min-width: 480px) {
@@ -99,7 +99,6 @@
 
 
 .about__content {
-
 	@media screen and (min-width: 768px) {
 		display: flex;
 		justify-content: center;
@@ -131,7 +130,9 @@
 
 
 .about__inner-text {
-	width: 210px;
+	width: 220px;
+	padding-left: 5px;
+	
 
 	
 	@media screen and (min-width: 479.99px) {
