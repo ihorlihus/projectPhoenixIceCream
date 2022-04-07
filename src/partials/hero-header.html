@@ -18,7 +18,7 @@
             </svg>
           </button>
         </div>
-        <button type="button" class="button-header">
+        <button type="button" class="button-header"header-modal-window-open>
           Buy now
           <svg class="button-vector__icon" width="4px" height="8px">
             <use href="./images/vector-button.svg#button-vector"></use>
@@ -37,5 +37,65 @@
         <button width="61px" height="24px">Products</button>
         <button width="82px" height="24px">How it’s made?</button>
         </div>
+
+<!--Modal Windows-->
+
+<div class="backdrop is-hidden" header-modal-window>
+  <div class="header-modal-window">
+    <button type="button" class="header-modal-window__close_btn" header-modal-window-close>
+      <svg class="header-modal-window__icon_btn" width="11" height="11">
+          <use href="./images/icons.svg#icon-close-btn1"></use>
+        </svg>
+    </button>
+
+   <p class="header-modal-window__title">We will call to you, leave your:</p> 
+
+        <form>
+     
+
+          <div  class="header-modal-window__field">
+               <label for="user-tel"   class="header-modal-window__label">Cell phone:</label>
+               <span class="header-modal-window__wrap">
+                <input 
+                type="tel"
+                name="user-tel"
+                class="header-modal-window__input"
+                required id="user-tel"
+                />
+        
+                <svg class="header-modal-window__icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-form-phone"></use>
+              </svg>
+        </span>
+         </div>
+         
+         <div  class="header-modal-window__field">
+              <label for="modal-email"class="header-modal-window__label">E-mail</label> 
+              <span class="header-modal-window__wrap">
+              <input 
+              type="email"
+              name="user-mail"
+              class="header-modal-window__input"
+              required id="modal-email"
+              />
+              <svg class="header-modal-window__icon" width="15" height="12">
+                  <use href="./images/icons.svg#icon-form-email"></use>
+              </svg>
+             </span>
+          </div>
+        
+         
+            
+              
+        <button type ="submit" class="header-modal-window__send_btn"header-modal-window-close>Send
+          <svg class="header-modal-window__send_btn_v" width="6px" height="10px">
+            <use href="./images/icons.svg#header-mobile-btn-v"></use>
+          </svg>
+        </button>
+              
+             
+        
+           </form>
+
   </header>
 </article>
