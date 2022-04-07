@@ -1,36 +1,45 @@
-.head-hero{
+.head-hero {
     background-color: var(--main-bg-color);
     // height: 100vh;
+    overflow: hidden;
 }
 
-.container__header-hero{
+.container__header-hero {
     padding-left: 20px;
     padding-right: 20px;
     background-color: var(--main-bg-color);
-   
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+
     @media screen and (min-width: 768px) {
         padding-left: 34px;
         padding-right: 34px;
+        max-width: 768px;
+        max-height: 399px;
     }
+
     @media screen and (min-width: 1280px) {
         padding-left: 115px;
         padding-right: 115px;
-        position: relative;
+        max-width: 1280px;
+        max-height: 665px;
     }
+
     @media screen and (min-width: 320px) {
-        min-height: 500px;
+        height: 502px;
         background-image: url('../images/hero/ellipse-mobile1.png');
         background-repeat: no-repeat;
         background-position: right top 85px;
     }
-    
+
     @media screen and (min-width: 768px) {
         min-height: 399px;
         background-image: url('../images/hero/elipse-tablet1.png');
         background-repeat: no-repeat;
         background-position: right 140px top 30px;
     }
-    
+
     @media screen and (min-width: 1280px) {
         min-height: 665px;
         background-image: url('../images/hero/elipse-desctop1.png');
@@ -38,6 +47,7 @@
         background-position: right 265px top 50px;
     }
 }
+
 // HEADER
 // +++++++++++++++++
 .menu-wraper {
@@ -46,39 +56,48 @@
     justify-content: space-between;
     padding-top: 6px;
 
+    @media screen and (max-width:479px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        padding: 8px 20px;
+        background-color: var(--main-bg-color);
+    }
+
     @media screen and (min-width: 768px) {
         padding-top: 37px;
     }
 
-}  
+}
 
-// @media screen and (min-width: 1280px) {
-    //     transform: translateX(-70px);
-    // }
 .logo {
     width: 199px;
     height: 50px;
 
-    @media screen and (min-width: 1200px) {
-        top: 34px;
-        left: 46px;
-        position: absolute;
+    @media screen and (min-width: 1280px) {
+        transform: translateX(-70px);
     }
 }
+
 .site-nav {
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         display: block;
         align-items: center;
     }
 }
+
 .site-list {
     display: flex;
 }
+
 .site-list .site-list__item:not(:last-child) {
     margin-right: 35px;
 }
+
 .site-list__link {
     display: inline-flex;
     color: var(--text-white-color);
@@ -87,21 +106,19 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
-    &:hover,
-    &:focus {
-        color: var(--title-color);
-        transition:  var(--animation-timing-function);
-    }
 }
+
 .helper {
     display: flex;
     align-items: center;
 }
+
 .btn-menu {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         display: none;
     }
 }
+
 .btn-menu__open {
     display: flex;
     border: none;
@@ -119,20 +136,20 @@
         margin-left: 30px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-left: 0;
     }
 }
+
 // =======================
 
 //  HERO
 
-// .hero {
-//     @media screen and (min-width: 320px) {
-//         padding-top: 135px;
-//     }
-    
-// }
+.hero {
+    // overflow: hidden;
+
+}
+
 .title {
     font-family: 'Titan One';
     font-style: normal;
@@ -150,11 +167,17 @@
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 25px;
+        font-size: 38px;
+        line-height: 44px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
     }
 }
+
 .button-position-header {
     display: flex;
 }
+
 .button-universal.product-btn {
     display: inline-flex;
     align-items: center;
@@ -174,7 +197,7 @@
         background-color: var(--bcg-hover-button-red);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-right: 15px;
         height: 40px;
         width: 104px;
@@ -182,6 +205,7 @@
         line-height: 1.3;
     }
 }
+
 .button-universal.how-it’s-made-btn {
     display: inline-flex;
     align-items: center;
@@ -198,72 +222,88 @@
         background-color: var(--button-bg-color-hover);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         height: 40px;
         width: 138px;
         font-size: 14px;
         line-height: 1.3;
     }
 }
+
 .button-vector {
     margin-left: 13px;
 }
 
 .thumb-ice {
-    
+
     @media screen and (min-width: 320px) {
         position: absolute;
-        max-width: 171px;
-        top: 152px;
+        width: 171px;
+        top: 98px;
         right: 30px;
     }
+
     @media screen and (min-width: 768px) {
         position: absolute;
         max-width: 143px;
-        top: 55px;
+        top: 60px;
         right: 250px;
     }
+
     @media screen and (min-width: 1280px) {
         position: absolute;
         min-width: 236px;
-        top: 98px;
+        top: 107px;
         right: 450px;
     }
 }
-.wraper__text-btn{
+
+.wraper__text-btn {
     @media screen and (min-width: 320px) {
         position: absolute;
         top: 195px;
     }
+
     @media screen and (min-width: 768px) {
         position: absolute;
         top: 100px;
     }
+
     @media screen and (min-width: 1280px) {
         position: absolute;
         top: 170px;
     }
 }
-.thumb-milk{
+
+.thumb-milk {
     opacity: 0;
+    display: flex;
+    justify-content: space-between;
+
     @media screen and (min-width: 768px) {
         position: absolute;
         bottom: 30px;
         max-width: 124px;
         opacity: 1;
+        align-items: flex-end;
     }
+
     @media screen and (min-width: 1280px) {
         position: absolute;
         bottom: 45px;
         max-width: 190px;
         opacity: 1;
+
     }
+
     @media screen and (min-width: 1280px) {
         transform: translateX(-40px);
     }
 }
-.thumb-tasty{
+
+.thumb-tasty {
     opacity: 0;
+
     @media screen and (min-width: 768px) {
         position: absolute;
         bottom: 0px;
@@ -271,6 +311,7 @@
         max-width: 168px;
         opacity: 1;
     }
+
     @media screen and (min-width: 1280px) {
         position: absolute;
         bottom: 0px;
@@ -279,73 +320,105 @@
     }
 }
 
+.about-text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 150%;
+    color: var(--text-white-color);
+    margin-bottom: 7px;
 
+    @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
 
+.about-hero {
+    min-width: 115px;
 
+    @media screen and (min-width: 1280px) {
+        min-width: 190px;
+    }
+}
 
+.button-about {
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    color: var(--title-color);
+    background-color: var(--text-white-color);
+    transition: background-color var(--animation-timing-function);
+    cursor: pointer;
+    content: url(../images/arrow-right.png);
 
+    @media screen and (min-width:1280px) {
+        width: 26px;
+        height: 26px;
+    }
+}
 
+.counter-wrap {
+    opacity: 0;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
+    @media screen and (min-width:768px) {
+        opacity: 1;
+    }
 
+    @media screen and (min-width:1280px) {
+        padding-top: 75px;
+    }
+}
 
+.counter {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url('../images/hero/circle-tablet.png');
+    background-repeat: no-repeat;
+    background-position: right top;
 
+    &>span {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 53px;
+        /* identical to box height */
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--title-color);
 
+        @media screen and (min-width:768px) {
+            font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 32px;
+            /* identical to box height */
 
+            text-align: right;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .thumb-elipse {
-//     max-width: 346px;
-//     position: absolute;
-//     right: 0;
-//     top: 50px;
-// }
-
-
-
-
-
-
-// +++++++++++++++
-
-// .header {
-//     background-color: var(--main-bg-color);
-//     background-image: url('../images/ice-cream-hero.png'), url('../images/Ellipse-pink-hero.png');
-//     background-repeat: no-repeat;
-//     background-size: 171px, 364px;
-//     background-position: right 32px top 92px, right -80px top 83px;
-
-//     @media screen and (min-width: 768px) {
-//         background-image:
-//             url('../images/so-tasty-hero.png'),
-//             url('../images/ice-cream-hero.png'),
-//             url('../images/Ellipse-pink-hero.png'),
-//             url('../images/milk.png');
-//         background-position:
-//             right 34px bottom,
-//             right 247px top 63px,
-//             right 137px top 31px,
-//             left 34px bottom 28px;
-//         background-size:
-//             168px,
-//             171px,
-//             364px,
-//             124px;
-//     }
-// }
+    &>p {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: var(--text-white-color);
+    }
+}
