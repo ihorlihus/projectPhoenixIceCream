@@ -1,30 +1,37 @@
 .advantages--background {
     background-color: var(--secondary-bg-color);
+    padding-bottom: 80px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 84px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 21px;
+        padding-bottom: 120px;
+    }
 }
-    
+
 .advantages__container {
     width: 100%;
-    padding-bottom: 97px;
+    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
-    margin: 0 auto;
 
     @media screen and (min-width: 480px) {
         width: 480px;
     }
-    
+
     @media screen and (min-width: 768px) {
         width: 768px;
-        padding-bottom: 140px;
-        padding-left: 36px;
-        padding-right: 36px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     @media screen and (min-width: 1280px) {
         width: 1280px;
-        padding-bottom: 139px;
-        padding-left: 115px;
-        padding-right: 115px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -32,11 +39,15 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        margin-left: -60px;
+        margin-left: -22px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 527px;
     }
 
     @media screen and (min-width: 1280px) {
-        margin-left: -30px;
+        margin-left: -142px;
     }
 }
 
@@ -75,18 +86,18 @@
 
 .advantages__item {
     @media screen and (min-width: 768px) {
-        width: calc(100%/3 - 60px);
-        margin-left: 60px;
+        width: calc((100% - 3*22px) / 3);
+        margin-left: 22px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: calc(100%/3 - 30px);
-        margin-left: 30px;
+        width: calc((100% - 3*142px) / 3);
+        margin-left: 142px;
     }
 
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
-            margin-bottom: 38px;
+            margin-bottom: 32px;
         }
     }
 }
@@ -110,7 +121,7 @@
     @media screen and (min-width: 1280px) {
         font-size: 58px;
         line-height: 1.14;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
     }
 }
 
@@ -120,6 +131,7 @@
     font-size: 12px;
     line-height: 1.7;
     color: var(--main-text-color);
+
     @media screen and (max-width: 767px) {
         max-width: 230px;
     }
