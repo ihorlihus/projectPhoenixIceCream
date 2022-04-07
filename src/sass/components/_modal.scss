@@ -80,9 +80,7 @@
     width: 100%;
     padding-bottom: 24px;
     margin: 0 auto;
-    
-  
-  }
+    }
   
   .modal-menu{
     width: 250px;
@@ -93,12 +91,15 @@
     background-color: #E17992;
     border: 2px solid #E17992;
     border-radius: 5px;
-  
-   
+    width: 100vw;
+    //height: 100vw;
+    position: absolute;
+    
+       
     &__list{margin-top: 20px;}
   
     &__item{
-      width: 245px;
+      width: 98%;
       height: 42;
       outline: 1px solid #E18298;
       padding-top:12px;
@@ -128,6 +129,9 @@
   //Button CSS
   
   .modal-menu__button{
+    //position: absolute;
+    //margin-right: 30%;
+
     @include font(DM Sans, normal, 700, 16px, 21px, none, none);
     border: none;
     color: #D41443;
@@ -166,11 +170,10 @@
   
   
   
-  
-  
   .modal-close-icon{
+    
     position: absolute;
-    margin-left: 208px;
+    margin-left:90%;
     fill: #ffffff;
      &:focus,
         &:hover{
@@ -178,3 +181,11 @@
           outline:none;
        }
       }
+
+
+      //Modal2
+
+  
+
+
+     
