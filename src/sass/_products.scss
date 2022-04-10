@@ -66,16 +66,13 @@
   }
 }
 
-// .products__block{
-//     position:relative;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     transform: translateY(95px);
-// }
+
 .products__item {
   position: relative;
-
+    &:hover,
+    &:focus {
+      border: 3px solid #ffffff;
+    }
   align-items: center;
   @media screen and (max-width: 767px) {
     margin: 0 auto;
@@ -150,7 +147,13 @@
     // transform: translateY(208px);
   }
 }
+.products__title--ice-cream {
 
+  &:hover,
+  &:focus {
+    text-shadow: 1px 1px 2px black;
+  }
+}
 .products__title--ice-cream::before {
   position: absolute;
   top: 0;
@@ -170,7 +173,13 @@
     transform: translateY(-370px);
   }
 }
+.products__title--ice-coffee {
 
+  &:hover,
+  &:focus {
+    text-shadow: 1px 1px 2px black;
+  }
+}
 .products__title--ice-coffee::before {
   position: absolute;
   top: 0;
@@ -189,7 +198,13 @@
     transform: translateY(-370px);
   }
 }
+.products__title--milkshakes {
 
+  &:hover,
+  &:focus {
+    text-shadow: 1px 1px 2px black;
+  }
+}
 .products__title--milkshakes::before {
   position: absolute;
   top: 0;
@@ -221,10 +236,34 @@
   right: 0;
   transform: translateY(30px);
 }
+.product__item--ice-cream {
 
+  &:hover,
+  &:focus {
+    box-shadow: 13px 13px 13px rgba(225, 121, 146, 1),
+      0px 1px 1px rgba(225, 121, 146, 1),
+      0px 2px 1px rgba(225, 121, 146, 1);
+    transform: scale(1.05);
+  }
+
+}
 .products__item--coffee {
   background-color: #f0d1a5;
-
+    &:hover,
+    &:focus {
+      box-shadow: 13px 13px 13px rgb(185, 150, 100),
+        0px 1px 1px rgba(240, 209, 165, 1),
+        0px 2px 1px rgba(240, 209, 165, 1);
+      transform: scale(1.05);
+    }
+    
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+    
+    }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     position: relative;
     top: 0;
@@ -236,7 +275,13 @@
 
 .products__item--milkshakes {
   background-color: #c2e297;
-
+    &:hover,
+    &:focus {
+      box-shadow: 13px 13px 13px rgb(162, 197, 117),
+        0px 1px 1px rgba(194, 226, 151, 1),
+        0px 2px 1px rgba(194, 226, 151, 1);
+      transform: scale(1.05);
+    }
   @media screen and (min-width: 320px) and (max-width: 767px) {
     position: relative;
     top: 0;
@@ -281,16 +326,16 @@
   margin-bottom: 30px;
   letter-spacing: 0.04em;
   color: #ffffff;
-  //   padding-left: 41px;
-  //   padding-right: 39px;
+  width: 200px;
+  margin: 0 auto;
+
 
   @media screen and (min-width: 768px) {
     display: block;
     line-height: 1.78;
     width: 198px;
     margin: 0 auto;
-    // padding-left: 11px;
-    // padding-right: 11px;
+   
     transform: translateY(210px);
   }
 
@@ -300,36 +345,28 @@
     line-height: 1.75;
     width: 241px;
     margin: 0 auto;
-    // padding-left: 44px;
-    // padding-right: 44px;
   }
 }
 
 .buttons__products {
-  //   margin: 0 auto;
+ 
+  &:focus {
+    transform: rotate(-90deg);
+  }
+  margin: 0 auto;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border-color: transparent;
   background-color: #ffffff;
-  //   top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  //   right: 0;
+  left:0;
+  right: 0;
+  transform: translateZ(-50%,0);
   bottom: 40px;
   position: absolute;
-  //   transform: translateY(404px);
+  
 }
 
-details summary::before {
-  position: absolute;
-  content: url(../images/arrow-right.png);
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  cursor: pointer;
-}
 
 .products__about {
   display: inline-flex;
@@ -340,4 +377,9 @@ details summary::before {
   color: #ffffff;
   padding-top: 10px;
   text-align: start;
+}
+.img__products{
+  &:focus {
+    transform: rotate(-90deg);
+  }
 }
